@@ -1,0 +1,16 @@
+1.FSM yordamida bot har bir foydalanuvchining qaysi bosqichda ekanini biladi va unga mos javob beradi.
+FSM bo’lmaganda, bot foydalanuvchidan kelgan xabarlarni faqat umumiy qabul qiladi va kontekstni eslay olmaydi. 
+Bu esa murakkab dialoglar va formalarni ishlashni qiyinlashtiradi.
+
+2.Fayl server yoki cloud storage (Google Drive) ga yuklash va faqat fayl URL yoki identifikatorini database-da saqlash.
+
+3. Aiogramda rasmiy “dependency injection” (DI) mexanizmi mavjud emas, 
+lekin Python funksiyalariga parametrlar orqali ob’yektlarni uzatish orqali DI ni implement qilish mumkin. 
+Masalan, database session, API client yoki loggerni handler funksiyasiga uzatish.
+
+4.Merchant API: Asosan to’lovlarni amalga oshirish va tekshirish uchun ishlatiladi. Masalan, foydalanuvchi mahsulot sotib olayotganda, Merchant API orqali to’lov qabul qilinadi.
+Subscribe API: Asosan obuna tizimlarini boshqaradi. Masalan, foydalanuvchi obuna bo’lganda yoki obunani bekor qilganda bu API ishlatiladi.
+
+5. CallbackAPI — bu serverimizga to’lov yoki abonentlik jarayonidagi hodisalar haqida xabar yuboradigan API.
+Foydalanuvchi to’lov qilganda, bot yoki tizim darhol xabar oladi.
+To’lov holati (success, failed) avtomatik yangilanadi.
